@@ -1,0 +1,11 @@
+<MithraObject objectType = "transactional">
+    <PackageName>com.example.reladomo.model</PackageName>
+    <ClassName>Employee</ClassName>
+    <DefaultTable>employee</DefaultTable>
+
+    <Attribute name = "id" javaType="long" columnName = "zid" primaryKey ="true"/>
+    <Attribute name = "name" javaType="String" columnName = "employee_name" />
+    <Attribute name = "age" javaType="int" columnName = "employee_age" />
+    <Attribute name = "salary" javaType="int" columnName = "employee_salary" />
+
+</MithraObject>

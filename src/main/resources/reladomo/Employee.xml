@@ -3,9 +3,10 @@
     <ClassName>Employee</ClassName>
     <DefaultTable>employee</DefaultTable>
 
-    <Attribute name = "id" javaType="long" columnName = "zid" primaryKey ="true"/>
+    <Attribute name = "id" javaType="long" columnName = "employee_id" primaryKey ="true"/>
     <Attribute name = "name" javaType="String" columnName = "employee_name" />
     <Attribute name = "age" javaType="int" columnName = "employee_age" />
     <Attribute name = "salary" javaType="int" columnName = "employee_salary" />
+    <Attribute name = "departmentId" javaType="long" columnName = "department_id" />
 
 </MithraObject>

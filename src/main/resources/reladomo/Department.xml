@@ -1,0 +1,12 @@
+<MithraObject objectType = "transactional">
+    <PackageName>com.example.reladomo.model</PackageName>
+    <ClassName>Department</ClassName>
+    <DefaultTable>department</DefaultTable>
+
+    <Attribute name = "departmentId" javaType = "long" columnName = "department_id" primaryKey = "true"/>
+    <Attribute name = "departmentName" javaType = "String" columnName = "department_name"/>
+    <Relationship name = "employee" relatedObject = "Employee" cardinality = "one-to-many"
+                  reverseRelationshipName = "department" relatedIsDependent = "true">
+        Employee.departmentId = this.departmentId
+    </Relationship>
+</MithraObject>

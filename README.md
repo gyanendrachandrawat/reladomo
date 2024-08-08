@@ -9,4 +9,10 @@ this.setAge(age);
 this.setSalary(salary);
 }
 
+public Department (long departmentId, String departmentName) {
+super();
+this.setDepartmentId(departmentId);
+this.setDepartmentName(departmentName);
+}
+
 then run the main method to insert the data into database table and retrieve it using Reladomo ORM

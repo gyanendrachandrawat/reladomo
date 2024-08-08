@@ -1,5 +1,6 @@
 package com.example.reladomo;
 
+import com.example.reladomo.model.Department;
 import com.example.reladomo.model.Employee;
 import com.example.reladomo.model.EmployeeFinder;
 import com.gs.fw.common.mithra.MithraManager;
@@ -29,10 +30,15 @@ public class ReladomoApplication {
 			MithraManagerProvider.getMithraManager()
 					.readConfiguration(is);
 
-			System.out.println("insert new Employee : ");
-			Employee employee = new Employee(1, "emp1", 25, 25000);
+			System.out.println("insert new Department Employee : ");
 
-			employee.insert();
+			Department department = new Department(1, "engineering");
+			Employee employee = new Employee(1, "emp1", 25, 25000);
+			department.getEmployee().add(employee);
+			department.cascadeInsert();
+
+
+//			employee.insert();
 
 			System.out.println("retrieve inserted Employee");
 			Employee employeeRetrieved = EmployeeFinder.findByPrimaryKey(1);

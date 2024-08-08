@@ -1,7 +1,6 @@
 <MithraRuntime>
-    <ConnectionManager
-            className="com.example.reladomo.ReladomoConnectionManager">
-        <MithraObjectConfiguration
-                className="com.example.reladomo.model.Employee" cacheType="partial"/>
+    <ConnectionManager className="com.example.reladomo.ReladomoConnectionManager">
+        <MithraObjectConfiguration className="com.example.reladomo.model.Department" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.example.reladomo.model.Employee" cacheType="partial"/>
     </ConnectionManager>
 </MithraRuntime>
